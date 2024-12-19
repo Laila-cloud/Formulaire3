@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Début formulaire -->
-     <div class="container">
+     <div class="container" >
       <!-- partie gauche formulaire -->
         <div class="left-side">
           <img src="/image/dinner-table1.jpg" alt="image restaurant">
@@ -29,8 +29,17 @@
             </div>
             <div class="time">
               <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
-              <input type="text" id="time">
-              <label for="time">Time</label>
+              <!-- <input type="text" id="time"> -->
+              <select name="time" id="time">
+                <optgroup>
+                  <option value="disabled selected">Food</option>
+                  <option value="hour">1 hour</option>
+                  <option value="hour">2 hours</option>
+                  <option value="hour">3 hours</option>
+                  <option value="hour">4 hours</option>
+                </optgroup>
+            </select>
+            <label for="time">Time</label>
             </div>
             <div class="food">
               <label for="food">Food</label>
